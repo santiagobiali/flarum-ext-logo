@@ -1,8 +1,8 @@
 {
-    "name": "santiagobiali/flarum-logo",
+    "name": "santiagobiali/flarum-ext-logo",
     "description": "Adds a logo to you forum",
     "type": "flarum-extension",
-    "keywords": ["logo", "flarum", "design"],
+    "keywords": ["logo", "flarum", "design", "ext", "santiagobiali"],
     "license": "MIT",
     "authors": [
         {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Flarum\\Logo\\": "src/"
+            "Santiagobiali\\Flarum\\Logo\\": "src/"
         }
     },
     "extra": {

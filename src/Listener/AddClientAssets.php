@@ -1,6 +1,6 @@
 <?php
 
-namespace Flarum\Logo\Listener;
+namespace Santiagobiali\Flarum\Logo\Listener;
 
 use DirectoryIterator;
 use Flarum\Event\ConfigureClientView;
@@ -34,7 +34,7 @@ class AddClientAssets
             $event->addAssets([
                 __DIR__ . '/../../js/admin/dist/extension.js'
             ]);
-            $event->addBootstrapper('flarum/logo/main');
+            $event->addBootstrapper('santiagobiali/flarum/logo/main');
         }
     }    
     /**

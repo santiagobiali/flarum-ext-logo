@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use Flarum\Logo\Listener;
+use Santiagobiali\Flarum\Logo\Listener;
 use Illuminate\Contracts\Events\Dispatcher;
 
 return function (Dispatcher $events) {
