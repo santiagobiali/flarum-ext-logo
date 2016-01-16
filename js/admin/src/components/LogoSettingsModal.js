@@ -6,15 +6,15 @@ export default class LogoSettingsModal extends SettingsModal {
   }
 
   title() {
-    return app.translator.trans('flarum-logo.admin.logo_settings.title');
+    return app.translator.trans('santiagobiali-logo.admin.logo_settings.title');
   }
 
   form() {
     return [
       <div className="Form-group">
-        <label>{app.translator.trans('flarum-logo.admin.logo_settings.logo_url')}</label>
-        {app.translator.trans('flarum-logo.admin.logo_settings.path_instructions')}
-        <input className="FormControl" bidi={this.setting('flarum-logo.logo_url')}/>
+        <label>{app.translator.trans('santiagobiali-logo.admin.logo_settings.logo_url')}</label>
+        {app.translator.trans('santiagobiali-logo.admin.logo_settings.path_instructions')}
+        <input className="FormControl" bidi={this.setting('santiagobiali-logo.logo_url')}/>
       </div>
     ];
   }
