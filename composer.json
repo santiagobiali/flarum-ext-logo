@@ -2,7 +2,7 @@
     "name": "flarum/logo",
     "description": "Adds a logo to you forum",
     "type": "flarum-extension",
-    "keywords": ["logo"],
+    "keywords": ["logo", "flarum", "design"],
     "license": "MIT",
     "authors": [
         {

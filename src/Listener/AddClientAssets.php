@@ -2,33 +2,20 @@
 
 namespace Flarum\Logo\Listener;
 
+use DirectoryIterator;
 use Flarum\Event\ConfigureClientView;
+use Flarum\Event\ConfigureLocales;
 use Illuminate\Contracts\Events\Dispatcher;
 
-use Flarum\Api\Serializer\ForumSerializer;
-use Flarum\Event\PrepareApiAttributes;
-use Flarum\Settings\SettingsRepositoryInterface;
 class AddClientAssets
 {
-    /**
-     * @var SettingsRepositoryInterface
-     */
-    protected $settings;
-    
-    /**
-     * @param SettingsRepositoryInterface $settings
-     */
-    public function __construct(SettingsRepositoryInterface $settings)
-    {
-        $this->settings = $settings;
-    }
-
     /**
      * @param Dispatcher $events
      */
     public function subscribe(Dispatcher $events)
     {
         $events->listen(ConfigureClientView::class, [$this, 'addAssets']);
+        $events->listen(ConfigureLocales::class, [$this, 'addLocales']);
     }
 
     /**
@@ -50,4 +37,17 @@ class AddClientAssets
             $event->addBootstrapper('flarum/logo/main');
         }
     }    
+    /**
+    * Provides i18n files.
+    *
+    * @param ConfigureLocales $event
+    */
+    public function addLocales(ConfigureLocales $event)
+    {
+        foreach (new DirectoryIterator(__DIR__.'/../../locale') as $file) {
+            if ($file->isFile() && in_array($file->getExtension(), ['yml', 'yaml'])) {
+                $event->locales->addTranslations($file->getBasename('.'.$file->getExtension()), $file->getPathname());
+            }
+        }
+    }
 }
