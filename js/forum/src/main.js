@@ -3,5 +3,5 @@ import app from 'flarum/app';
 
 app.initializers.add('santiagobiali-logo', () => {
     document.getElementById("home-link").innerHTML = 
-            "<img src='"+app.forum.attribute('logo_url')+"'>";
+            "<img src='"+app.forum.attribute('logo_url')+"' class='santiagobiali-logo'>";
 },-100);
