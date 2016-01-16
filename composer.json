@@ -1,0 +1,35 @@
+{
+    "name": "flarum/logo",
+    "description": "Adds a logo to you forum",
+    "type": "flarum-extension",
+    "keywords": ["logo"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Santiago Testa Biali",
+            "email": "santiago.t.biali@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/santiagobiali/flarum-logo/issues",
+        "source": "https://github.com/santiagobiali/flarum-logo"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flarum\\Logo\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Logo",
+            "icon": {
+                "name": "image",
+                "backgroundColor": "#3b5998",
+                "color": "#fff"
+            }
+        }
+    }
+}
