@@ -1,6 +1,6 @@
 <?php
 
-namespace Santiagobiali\Flarum\Logo\Listener;
+namespace Santiagobiali\Logo\Listener;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Flarum\Api\Serializer\ForumSerializer;

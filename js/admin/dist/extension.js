@@ -1,4 +1,4 @@
-System.register('santiagobiali/flarum/logo/components/LogoSettingsModal', ['flarum/components/SettingsModal'], function (_export) {
+System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/components/SettingsModal'], function (_export) {
   'use strict';
 
   var SettingsModal, LogoSettingsModal;
@@ -48,7 +48,7 @@ System.register('santiagobiali/flarum/logo/components/LogoSettingsModal', ['flar
     }
   };
 });;
-System.register('santiagobiali/flarum/logo/main', ['flarum/extend', 'flarum/app', 'santiagobiali/flarum/logo/components/LogoSettingsModal'], function (_export) {
+System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app', 'santiagobiali/logo/components/LogoSettingsModal'], function (_export) {
   'use strict';
 
   var extend, app, LogoSettingsModal;
@@ -57,13 +57,12 @@ System.register('santiagobiali/flarum/logo/main', ['flarum/extend', 'flarum/app'
       extend = _flarumExtend.extend;
     }, function (_flarumApp) {
       app = _flarumApp['default'];
-    }, function (_santiagobialiFlarumLogoComponentsLogoSettingsModal) {
-      LogoSettingsModal = _santiagobialiFlarumLogoComponentsLogoSettingsModal['default'];
+    }, function (_santiagobialiLogoComponentsLogoSettingsModal) {
+      LogoSettingsModal = _santiagobialiLogoComponentsLogoSettingsModal['default'];
     }],
     execute: function () {
 
       app.initializers.add('flarum-logo', function () {
-
         app.extensionSettings['santiagobiali-logo'] = function () {
           return app.modal.show(new LogoSettingsModal());
         };

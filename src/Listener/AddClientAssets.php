@@ -1,6 +1,6 @@
 <?php
 
-namespace Santiagobiali\Flarum\Logo\Listener;
+namespace Santiagobiali\Logo\Listener;
 
 use DirectoryIterator;
 use Flarum\Event\ConfigureClientView;
@@ -27,14 +27,14 @@ class AddClientAssets
             $event->addAssets([
                 __DIR__ . '/../../js/forum/dist/extension.js',
             ]);
-            $event->addBootstrapper('flarum/logo/main');
+            $event->addBootstrapper('santiagobiali/logo/main');
         }
 
         if ($event->isAdmin()) {
             $event->addAssets([
                 __DIR__ . '/../../js/admin/dist/extension.js'
             ]);
-            $event->addBootstrapper('santiagobiali/flarum/logo/main');
+            $event->addBootstrapper('santiagobiali/logo/main');
         }
     }    
     /**

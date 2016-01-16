@@ -1,4 +1,4 @@
-System.register('flarum/logo/main', ['flarum/extend', 'flarum/app'], function (_export) {
+System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app'], function (_export) {
     'use strict';
 
     var extend, app;
@@ -10,7 +10,7 @@ System.register('flarum/logo/main', ['flarum/extend', 'flarum/app'], function (_
         }],
         execute: function () {
 
-            app.initializers.add('flarum-logo', function () {
+            app.initializers.add('flarum-ext-logo', function () {
                 document.getElementById("home-link").innerHTML = "<img src='" + app.forum.attribute('logo_url') + "'>";
             }, -100);
         }

@@ -15,7 +15,7 @@ Visit the extension tab in your admin to configure your logo.
 
 ## Links
 
-- by [Santiago](https://github.com/santiagobiali)s
+- by [Santiago](https://github.com/santiagobiali)
 - [license](license.md)
 
 [packagist-link]: https://packagist.org/packages/santiagobiali/flarum-ext-logo
