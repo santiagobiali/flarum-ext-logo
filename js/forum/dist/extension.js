@@ -10,7 +10,7 @@ System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app'], func
         }],
         execute: function () {
 
-            app.initializers.add('flarum-ext-logo', function () {
+            app.initializers.add('santiagobiali-logo', function () {
                 document.getElementById("home-link").innerHTML = "<img src='" + app.forum.attribute('logo_url') + "'>";
             }, -100);
         }

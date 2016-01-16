@@ -23,7 +23,7 @@ System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/comp
         }, {
           key: 'title',
           value: function title() {
-            return app.translator.trans('flarum-logo.admin.logo_settings.title');
+            return app.translator.trans('santiagobiali-logo.admin.logo_settings.title');
           }
         }, {
           key: 'form',
@@ -34,10 +34,10 @@ System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/comp
               m(
                 'label',
                 null,
-                app.translator.trans('flarum-logo.admin.logo_settings.logo_url')
+                app.translator.trans('santiagobiali-logo.admin.logo_settings.logo_url')
               ),
-              app.translator.trans('flarum-logo.admin.logo_settings.path_instructions'),
-              m('input', { className: 'FormControl', bidi: this.setting('flarum-logo.logo_url') })
+              app.translator.trans('santiagobiali-logo.admin.logo_settings.path_instructions'),
+              m('input', { className: 'FormControl', bidi: this.setting('santiagobiali-logo.logo_url') })
             )];
           }
         }]);
@@ -62,7 +62,7 @@ System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app', 'sant
     }],
     execute: function () {
 
-      app.initializers.add('flarum-logo', function () {
+      app.initializers.add('santiagobiali-logo', function () {
         app.extensionSettings['santiagobiali-logo'] = function () {
           return app.modal.show(new LogoSettingsModal());
         };
