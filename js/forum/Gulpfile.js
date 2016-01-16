@@ -1,7 +1,9 @@
-var gulp = require('flarum-gulp');
+var flarum = require('flarum-gulp');
 
-gulp({
+flarum({
   modules: {
-    'santiagobiali/logo': 'src/**/*.js'
+    'santiagobiali/logo': [
+      'src/**/*.js'
+    ]
   }
 });
