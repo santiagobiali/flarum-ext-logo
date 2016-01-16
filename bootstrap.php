@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Flarum.
+ * This file is part of Santiagobiali/flarum-ext-logo
  *
  * (c) Santiago Testa Biali <santiago.t.biali@gmail.com@gmail.com>
  *
@@ -9,7 +9,8 @@
  * file that was distributed with this source code.
  */
 
-use Santiagobiali\Logo\Listener;
+namespace Santiagobiali\Logo;
+
 use Illuminate\Contracts\Events\Dispatcher;
 
 return function (Dispatcher $events) {
