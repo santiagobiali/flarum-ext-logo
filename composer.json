@@ -1,5 +1,5 @@
 {
-    "name": "flarum/logo",
+    "name": "santiagobiali/flarum-logo",
     "description": "Adds a logo to you forum",
     "type": "flarum-extension",
     "keywords": ["logo", "flarum", "design"],
