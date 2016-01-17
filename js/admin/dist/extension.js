@@ -37,7 +37,15 @@ System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/comp
                 app.translator.trans('santiagobiali-logo.admin.logo_settings.logo_url')
               ),
               app.translator.trans('santiagobiali-logo.admin.logo_settings.path_instructions'),
-              m('input', { className: 'FormControl', bidi: this.setting('santiagobiali-logo.logo_url') })
+              m('input', { className: 'FormControl', bidi: this.setting('santiagobiali-logo.logo_url') }),
+              m('br', null),
+              m(
+                'label',
+                null,
+                app.translator.trans('santiagobiali-logo.admin.css_settings.title')
+              ),
+              app.translator.trans('santiagobiali-logo.admin.css_settings.css_instructions'),
+              m('textarea', { className: 'FormControl', rows: '3', bidi: this.setting('santiagobiali-logo.logo_css') })
             )];
           }
         }]);

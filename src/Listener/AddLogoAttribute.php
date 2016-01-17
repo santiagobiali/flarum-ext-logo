@@ -34,6 +34,7 @@ class AddLogoAttribute
     {
         if ($event->isSerializer(ForumSerializer::class)) {
             $event->attributes['logo_url'] = $this->settings->get('santiagobiali-logo.logo_url');
+            $event->attributes['logo_css'] = $this->settings->get('santiagobiali-logo.logo_css');
         }
     }
     

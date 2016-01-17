@@ -11,7 +11,9 @@ System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app'], func
         execute: function () {
 
             app.initializers.add('santiagobiali-logo', function () {
-                document.getElementById("home-link").innerHTML = "<img src='" + app.forum.attribute('logo_url') + "' class='santiagobiali-logo'>";
+                document.getElementById("home-link").innerHTML = "<img src='" + app.forum.attribute('logo_url') + "' class=santiagobiali-logo>";
+
+                document.write("<style>.santiagobiali-logo{" + app.forum.attribute('logo_css') + "}</style>");
             }, -100);
         }
     };

@@ -9,4 +9,8 @@ santiagobiali-logo:
    logo_settings:
       title: Configurações da Logo
       logo_url: URL da logo
-      path_instructions: ex:assets/logo.png
+      path_instructions: ex:/assets/logo.png
+   
+   css_settings:
+      title: Configurações de Css
+      css_instructions: Adicione apenas o atributo. Ex margin:3px;

@@ -15,6 +15,10 @@ export default class LogoSettingsModal extends SettingsModal {
         <label>{app.translator.trans('santiagobiali-logo.admin.logo_settings.logo_url')}</label>
         {app.translator.trans('santiagobiali-logo.admin.logo_settings.path_instructions')}
         <input className="FormControl" bidi={this.setting('santiagobiali-logo.logo_url')}/>
+        <br/>
+        <label>{app.translator.trans('santiagobiali-logo.admin.css_settings.title')}</label>
+        {app.translator.trans('santiagobiali-logo.admin.css_settings.css_instructions')}
+        <textarea className="FormControl" rows="3" bidi={this.setting('santiagobiali-logo.logo_css')}/>
       </div>
     ];
   }
