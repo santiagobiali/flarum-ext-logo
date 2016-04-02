@@ -1,18 +1,18 @@
-System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/components/SettingsModal'], function (_export) {
-  'use strict';
+'use strict';
 
+System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/components/SettingsModal'], function (_export, _context) {
   var SettingsModal, LogoSettingsModal;
   return {
     setters: [function (_flarumComponentsSettingsModal) {
-      SettingsModal = _flarumComponentsSettingsModal['default'];
+      SettingsModal = _flarumComponentsSettingsModal.default;
     }],
     execute: function () {
-      LogoSettingsModal = (function (_SettingsModal) {
+      LogoSettingsModal = function (_SettingsModal) {
         babelHelpers.inherits(LogoSettingsModal, _SettingsModal);
 
         function LogoSettingsModal() {
           babelHelpers.classCallCheck(this, LogoSettingsModal);
-          babelHelpers.get(Object.getPrototypeOf(LogoSettingsModal.prototype), 'constructor', this).apply(this, arguments);
+          return babelHelpers.possibleConstructorReturn(this, Object.getPrototypeOf(LogoSettingsModal).apply(this, arguments));
         }
 
         babelHelpers.createClass(LogoSettingsModal, [{
@@ -50,23 +50,23 @@ System.register('santiagobiali/logo/components/LogoSettingsModal', ['flarum/comp
           }
         }]);
         return LogoSettingsModal;
-      })(SettingsModal);
+      }(SettingsModal);
 
       _export('default', LogoSettingsModal);
     }
   };
 });;
-System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app', 'santiagobiali/logo/components/LogoSettingsModal'], function (_export) {
-  'use strict';
+'use strict';
 
+System.register('santiagobiali/logo/main', ['flarum/extend', 'flarum/app', 'santiagobiali/logo/components/LogoSettingsModal'], function (_export, _context) {
   var extend, app, LogoSettingsModal;
   return {
     setters: [function (_flarumExtend) {
       extend = _flarumExtend.extend;
     }, function (_flarumApp) {
-      app = _flarumApp['default'];
+      app = _flarumApp.default;
     }, function (_santiagobialiLogoComponentsLogoSettingsModal) {
-      LogoSettingsModal = _santiagobialiLogoComponentsLogoSettingsModal['default'];
+      LogoSettingsModal = _santiagobialiLogoComponentsLogoSettingsModal.default;
     }],
     execute: function () {
 

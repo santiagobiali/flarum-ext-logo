@@ -1,5 +1,5 @@
 # santiagobiali/flarum-ext-logo
-A [Flarum](http://flarum.org) extension to change the title to an image, supports multiple services like local storage and imgur.
+A [Flarum](http://flarum.org) extension to change forum title into an image.
 
 ---
 
