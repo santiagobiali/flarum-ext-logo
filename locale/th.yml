@@ -7,10 +7,10 @@ santiagobiali-logo:
   # Strings in this namespace are used by the admin interface.
   admin:
    logo_settings:
-      title: การตั้งค่าโลโก้
+      title: ตั้งค่าโลโก้
       logo_url: ที่อยู่ไฟล์
       path_instructions: ตัวอย่าง:/assets/logo.png
    
    css_settings:
-      title: การตั้งค่ารูปแบบการแสดงผล (CSS)
+      title: ตั้งค่ารูปแบบการแสดงผล (CSS)
       css_instructions: กำหนดค่าเพิ่มเติม. ตัวอย่าง margin:3px;
